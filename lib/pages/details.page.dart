@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 
 class DetailsPage extends StatelessWidget {
-  DetailsPage({super.key, required this.valor, required this.estado, required this.colorEstado});
+  DetailsPage({super.key, required this.valor, required this.estado, required this.colorEstado, required this.mensajeExtendido});
+
   double valor;
   String estado;
   Color colorEstado;
+  String mensajeExtendido;
 
 
   @override
@@ -84,7 +86,7 @@ class DetailsPage extends StatelessWidget {
                                             child: Row(
                                               mainAxisAlignment: MainAxisAlignment.center,
                                               children: [
-                                                Text("Mensaje Extendido",style: TextStyle(
+                                                Text(mensajeExtendido,style: TextStyle(
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.bold
                                               ),)

@@ -229,40 +229,48 @@ class _HomePageState extends State<HomePage> {
                 double imc = peso / ((estatura/100) * (estatura/100));
                 String estado = "Mensaje Predefinido";
                 Color colorEstado = Colors.blue;
+                String mensajeExtendido = "Mensaje Extendido predefinido";
 
                 
                   if(imc < 18.5){
                     estado = "Bajo peso";
                     colorEstado = Colors.orange;
+                    mensajeExtendido = "Tiene un Peso Corporal Bajo. ¡Come Mas¡";
                   }
                   if(imc >= 18.5 && imc <24.9){
                     estado = "Normal";
                     colorEstado = Colors.green;
+                    mensajeExtendido = "Tiene un Peso Corporal Normal. ¡Buen Trabajo!";
                   }
                   if(imc >= 25 && imc <29.9){
                     estado = "Sobrepreso";
                     colorEstado = Color.fromARGB(255, 215, 132, 24);
+                    mensajeExtendido = "Tiene un Peso Corporal Arriba del promedio. ¡Cuidate un Poco¡";
                   }
                   if(imc >= 30 && imc <34.9){
                     estado = "Obesidad I";
                     colorEstado = Colors.red;
+                    mensajeExtendido = "Tiene un Peso Corporal Elevado. ¡Hora del Ejercicio! ";
                   }
                   if(imc >= 35 && imc <39.9){
                     estado = "Obesidad II";
                     colorEstado = Color.fromARGB(255, 208, 44, 33);
+                    mensajeExtendido = "Tiene un Peso Corporal es Bastante Elevado. ¡Procura tu Salud! ";
                   }
                   if(imc >= 40 && imc <49.9){
                     estado = "Obesidad III";
                     colorEstado = Color.fromARGB(255, 181, 31, 20);
+                    mensajeExtendido = "Tiene un Peso Corporal es Demasiado Elevado. ¡Visita tu Medico! ";
                   }
                   if(imc >= 50){
                     estado = "Obesidad IV";
                     colorEstado = Color.fromARGB(255, 127, 12, 4);
+                    mensajeExtendido = "Infarto en 3..,2...,1... ";
                   }
               
                 
 
-                Navigator.push(context, MaterialPageRoute(builder: ((context) => DetailsPage(valor : imc,estado: estado, colorEstado: colorEstado))));
+                Navigator.push(context, MaterialPageRoute(builder: ((context) => DetailsPage(valor : imc,estado: estado, colorEstado: colorEstado, mensajeExtendido: mensajeExtendido))));
               },
               child: Container(
                 height: 100,
