@@ -235,32 +235,32 @@ class _HomePageState extends State<HomePage> {
                   if(imc < 18.5){
                     estado = "Bajo peso";
                     colorEstado = Colors.orange;
-                    mensajeExtendido = "Tiene un Peso Corporal Bajo. ¡Come Mas¡";
+                    mensajeExtendido = "Tiene un Peso Corporal Bajo.\n ¡Come Mas¡";
                   }
                   if(imc >= 18.5 && imc <24.9){
                     estado = "Normal";
                     colorEstado = Colors.green;
-                    mensajeExtendido = "Tiene un Peso Corporal Normal. ¡Buen Trabajo!";
+                    mensajeExtendido = "Tiene un Peso Corporal Normal.\n ¡Buen Trabajo!";
                   }
                   if(imc >= 25 && imc <29.9){
                     estado = "Sobrepreso";
                     colorEstado = Color.fromARGB(255, 215, 132, 24);
-                    mensajeExtendido = "Tiene un Peso Corporal Arriba del promedio. ¡Cuidate un Poco¡";
+                    mensajeExtendido = "Tiene un Peso Corporal Arriba del promedio.\n ¡Cuidate un Poco¡";
                   }
                   if(imc >= 30 && imc <34.9){
                     estado = "Obesidad I";
                     colorEstado = Colors.red;
-                    mensajeExtendido = "Tiene un Peso Corporal Elevado. ¡Hora del Ejercicio! ";
+                    mensajeExtendido = "Tiene un Peso Corporal Elevado.\n ¡Hora del Ejercicio! ";
                   }
                   if(imc >= 35 && imc <39.9){
                     estado = "Obesidad II";
                     colorEstado = Color.fromARGB(255, 208, 44, 33);
-                    mensajeExtendido = "Tiene un Peso Corporal es Bastante Elevado. ¡Procura tu Salud! ";
+                    mensajeExtendido = "Tiene un Peso Corporal es Bastante Elevado.\n ¡Procura tu Salud! ";
                   }
                   if(imc >= 40 && imc <49.9){
                     estado = "Obesidad III";
                     colorEstado = Color.fromARGB(255, 181, 31, 20);
-                    mensajeExtendido = "Tiene un Peso Corporal es Demasiado Elevado. ¡Visita tu Medico! ";
+                    mensajeExtendido = "Tiene un Peso Corporal es Demasiado Elevado.\n ¡Visita tu Medico! ";
                   }
                   if(imc >= 50){
                     estado = "Obesidad IV";
